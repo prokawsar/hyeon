@@ -1,20 +1,15 @@
 <script>
-	import { i, languages, switchLanguage } from '@inlang/sdk-js';
+	// import { i, languages, switchLanguage } from '@inlang/sdk-js';
+
+	import Header from '$lib/components/header.svelte'
+	import Banner from '$lib/components/banner.svelte'
 </script>
 
 <svelte:head>
-	<title>Dashboard starter</title>
+	<title>PetSafe</title>
 </svelte:head>
 
-<div class="flex flex-row gap-2 container mx-auto justify-center">
-	{#each languages as lang}
-		<button on:click={() => switchLanguage(lang)}>{lang}</button>
-	{/each}
+<div class="flex flex-col max-w-5xl justify-center items-center w-full mx-auto">
+	<Header />
+	<Banner />
 </div>
-
-<h1
-	data-tippy="Hello Tooltip"
-	class="text-3xl mt-10 font-bold underline mx-auto container flex justify-center"
->
-	{i('welcome')}
-</h1>
