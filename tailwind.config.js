@@ -10,6 +10,9 @@ export default {
 					500: '#30D5C8'
 				},
 				graay: '#F7F7F7'
+			},
+			fontWeight: {
+				500: '500'
 			}
 		}
 	},
