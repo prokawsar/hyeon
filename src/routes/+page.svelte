@@ -11,7 +11,7 @@
 	<title>PetSafe</title>
 </svelte:head>
 
-<div class="flex flex-col gap-5 justify-center items-center w-full mx-auto">
+<div class="flex flex-col justify-center items-center w-full mx-auto">
 	<Header />
 	<!-- <Banner /> -->
 	<Hero />
