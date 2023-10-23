@@ -5,6 +5,7 @@
 	import Banner from '$lib/components/banner.svelte'
 	import Hero from '$lib/components/hero.svelte'
 	import Features from '$lib/components/features.svelte'
+	import Footer from '$lib/components/footer.svelte'
 </script>
 
 <svelte:head>
@@ -16,4 +17,5 @@
 	<!-- <Banner /> -->
 	<Hero />
 	<Features />
+	<Footer />
 </div>

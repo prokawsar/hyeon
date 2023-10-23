@@ -3,7 +3,7 @@
 	import Card from './elements/card.svelte'
 </script>
 
-<div class="flex flex-row gap-6 w-full justify-center max-w-4xl mt-5">
+<div class="flex flex-row gap-6 w-full justify-center max-w-7xl mt-5">
 	<Card />
 	<Card />
 	<Card />
