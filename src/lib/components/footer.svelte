@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="flex flex-col w-full">
+<div class="flex flex-col w-full mt-5">
 	<div class="bg-gray-200 flex w-full justify-center py-2">
 		<div class="flex flex-row px-5 md:px-0 max-w-7xl w-full justify-between">
 			<div class="flex flex-row gap-3 justify-center max-w-7xl text-gray-400">
@@ -10,7 +10,7 @@
 				<a href="/" class="text-gray-400">회사소개</a>
 			</div>
 			<div class="flex flex-row justify-center max-w-7xl">
-				<select class="px-5">
+				<select class="px-5 bg-transparent">
 					<option>Select</option>
 					<option>Select</option>
 					<option>Select</option>
