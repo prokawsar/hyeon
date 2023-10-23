@@ -6,7 +6,7 @@
 	let activeMenu = 'one'
 </script>
 
-<div class="flex flex-row w-full py-4 px-3 md:px-0 max-w-7xl">
+<div class="flex flex-row w-full py-4 px-5 md:px-0 max-w-7xl">
 	<div class="flex items-center mr-20 w-full h-full">
 		<img src="img/logo.png" alt="logo" class="" />
 	</div>
