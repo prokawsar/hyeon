@@ -4,6 +4,7 @@
 	"trailingComma": "none",
 	"semi": false,
 	"printWidth": 100,
+	"bracketSameLine": true,
 	"tabWidth": 2,
 	"plugins": ["prettier-plugin-svelte"],
 	"pluginSearchDirs": ["."],
