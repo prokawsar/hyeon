@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="flex flex-col gap-3 justify-center text-white bg-purple w-36 h-36 items-center rounded-2xl"
+	class="flex flex-col gap-3 justify-center text-white bg-primary-500 w-36 h-36 items-center rounded-2xl"
 >
 	<Fa icon={items[name]} class="" size="3x" />
 	<p class="text-lg font-bold">{name}</p>
