@@ -1,18 +1,9 @@
 <script>
-	import {
-		faCapsules,
-		faGlobe,
-		faLocation,
-		faLocationDot,
-		faLocationPin,
-		faMessage
-	} from '@fortawesome/free-solid-svg-icons'
-	import Fa from 'svelte-fa'
 	import Item from './elements/item.svelte'
 </script>
 
 <div
-	class="flex flex-col gap-5 md:flex-row p-7 w-full max-w-7xl justify-between mt-5 bg-white rounded-2xl shadow-xl"
+	class="flex flex-col gap-5 md:flex-row p-7 w-full max-w-7xl justify-between mt-11 bg-white rounded-2xl shadow-xl"
 >
 	<div class="flex flex-col justify-center gap-3">
 		<p class="text-3xl font-semibold text-purple mb-5">고객지원센터</p>

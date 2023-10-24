@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="flex flex-col gap-5 px-3 md:flex-row w-full max-w-7xl justify-between mt-5 bg-white rounded-2xl shadow-xl"
+	class="flex flex-col gap-5 px-3 md:flex-row w-full max-w-7xl justify-between mt-11 bg-white rounded-2xl shadow-xl"
 >
 	<div class="relative flex flex-col gap-3 pt-7 px-7">
 		<p class="text-3xl font-semibold text-purple mb-5">펫세이프 인증정보</p>
