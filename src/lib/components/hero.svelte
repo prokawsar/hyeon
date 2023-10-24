@@ -1,9 +1,9 @@
-<div class="relative w-full h-full">
+<div class="relative w-full md:h-full h-[700px]">
 	<span class="absolute w-full h-full backdrop-brightness-75" />
-	<img src="img/hero.png" alt="hero" class="h-auto max-w-full" />
+	<img src="img/hero.png" alt="hero" class="md:h-auto h-[700px] object-cover max-w-full" />
 
 	<div class="absolute inset-y-0 left-0 flex items-center w-full justify-center">
-		<div class="flex flex-row w-full max-w-7xl">
+		<div class="flex flex-col md:flex-row w-full max-w-7xl px-5">
 			<div class="flex-1">
 				<h1 class="text-white text-5xl font-bold">
 					펫세이프는, 반려동물의 안전과 보호를 위한 인증제도 입니다
