@@ -7,7 +7,7 @@
 
 	export let name = ''
 
-	const items = {
+	const items: any = {
 		분석의뢰: Security as ComponentType,
 		인증품목: Notepad as ComponentType,
 		인증소개: Message as ComponentType,
@@ -21,5 +21,5 @@
 	<!-- <div class="bg-gray-200 rounded-full h-24 w-24"> -->
 	<svelte:component this={items[name]} />
 	<!-- </div> -->
-	<p class="capitalize">{name}</p>
+	<p class="capitalize text-xl font-medium">{name}</p>
 </div>

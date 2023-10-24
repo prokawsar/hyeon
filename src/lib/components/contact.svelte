@@ -16,8 +16,12 @@
 >
 	<div class="flex flex-col justify-center gap-3">
 		<p class="text-3xl font-semibold text-purple mb-5">고객지원센터</p>
-		<span class="bg-gray-10 rounded-3xl px-4 py-1">Tel. <tel>02-123-4567</tel></span>
-		<span class="bg-gray-10 rounded-3xl px-4 py-1">E-mail. acdef@petsafe.co.kr</span>
+		<span class="bg-gray-10 rounded-3xl px-4 py-1 text-lg font-normal"
+			>Tel. <tel>02-123-4567</tel></span
+		>
+		<span class="bg-gray-10 rounded-3xl px-4 py-1 text-lg font-normal"
+			>E-mail. acdef@petsafe.co.kr</span
+		>
 	</div>
 
 	<div class="grid grid-cols-2 md:flex md:flex-row gap-5">
