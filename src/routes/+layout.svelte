@@ -11,6 +11,6 @@
 	})
 </script>
 
-<main class="bg-graay pb-5">
+<main class="bg-gray-20 pb-5">
 	<slot />
 </main>

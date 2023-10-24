@@ -19,7 +19,7 @@
 		{#each menus as menu}
 			<button
 				on:click={() => (activeMenu = menu.name)}
-				class="text-xl font-500 {activeMenu == menu.name
+				class="text-xl font-medium {activeMenu == menu.name
 					? 'border-b-2 border-b-primary-400 text-primary-400'
 					: ''}">{menu.name}</button
 			>
@@ -31,7 +31,7 @@
 		</div> -->
 	</div>
 	<div class="flex items-center justify-end md:justify-between w-[30%]">
-		<div class="hidden md:flex flex-row gap-3 text-sm font-500">
+		<div class="hidden md:flex flex-row gap-3 text-sm font-normal">
 			<button> 로그인 </button>
 			<span>|</span>
 			<button> 회원가입 </button>

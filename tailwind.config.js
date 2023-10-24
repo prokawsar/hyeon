@@ -9,10 +9,11 @@ export default {
 					400: '#03C1B1',
 					500: '#30D5C8'
 				},
-				graay: '#F7F7F7'
-			},
-			fontWeight: {
-				500: '500'
+				gray: {
+					10: '#EDEDED',
+					20: '#F7F7F7'
+				},
+				purple: '#8F36FF'
 			}
 		}
 	},

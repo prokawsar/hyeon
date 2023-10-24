@@ -6,6 +6,7 @@
 	import Hero from '$lib/components/hero.svelte'
 	import Features from '$lib/components/features.svelte'
 	import Footer from '$lib/components/footer.svelte'
+	import Contact from '$lib/components/contact.svelte'
 </script>
 
 <svelte:head>
@@ -17,5 +18,6 @@
 	<!-- <Banner /> -->
 	<Hero />
 	<Features />
+	<Contact />
 	<Footer />
 </div>
