@@ -6,8 +6,8 @@
 <div
 	class="grid grid-cols-2 md:flex md:flex-row px-3 gap-3 md:gap-6 w-full justify-center max-w-7xl mt-5"
 >
-	<Card />
-	<Card />
-	<Card />
-	<Card />
+	<Card name="분석의뢰" />
+	<Card name="인증품목" />
+	<Card name="인증소개" />
+	<Card name="분석기관" />
 </div>
