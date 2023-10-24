@@ -7,6 +7,7 @@
 	import Features from '$lib/components/features.svelte'
 	import Footer from '$lib/components/footer.svelte'
 	import Contact from '$lib/components/contact.svelte'
+	import Announce from '$lib/components/announce.svelte'
 </script>
 
 <svelte:head>
@@ -18,6 +19,7 @@
 	<!-- <Banner /> -->
 	<Hero />
 	<Features />
+	<Announce />
 	<Contact />
 	<Footer />
 </div>

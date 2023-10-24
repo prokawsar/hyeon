@@ -11,7 +11,8 @@ export default {
 				},
 				gray: {
 					10: '#EDEDED',
-					20: '#F7F7F7'
+					20: '#F7F7F7',
+					30: '#D9D9D9'
 				},
 				purple: '#8F36FF'
 			}
