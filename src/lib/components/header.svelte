@@ -32,9 +32,9 @@
 	</div>
 	<div class="flex items-center justify-end md:justify-between w-[30%]">
 		<div class="hidden md:flex flex-row gap-3 text-sm font-500">
-			<button> sign in </button>
+			<button> 로그인 </button>
 			<span>|</span>
-			<button> sign up </button>
+			<button> 회원가입 </button>
 		</div>
 		<Fa icon={faBars} size="1.2x" class="cursor-pointer" />
 	</div>
