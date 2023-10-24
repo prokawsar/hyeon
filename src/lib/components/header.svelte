@@ -2,8 +2,13 @@
 	import Fa from 'svelte-fa'
 	import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-	const menus = ['one', 'two', 'three', 'four']
-	let activeMenu = 'one'
+	const menus = [
+		{ name: '분석기관', url: '/' },
+		{ name: '인증센터', url: '/' },
+		{ name: '안전인증', url: '/' },
+		{ name: '커뮤니티', url: '/' }
+	]
+	let activeMenu = '분석기관'
 </script>
 
 <div class="flex flex-row w-full py-4 px-5 justify-between md:px-3 max-w-7xl">
@@ -13,10 +18,10 @@
 	<div class="hidden md:flex flex-row gap-12 items-center w-full justify-start">
 		{#each menus as menu}
 			<button
-				on:click={() => (activeMenu = menu)}
-				class="text-xl font-500 {activeMenu == menu
+				on:click={() => (activeMenu = menu.name)}
+				class="text-xl font-500 {activeMenu == menu.name
 					? 'border-b-2 border-b-primary-400 text-primary-400'
-					: ''}">{menu}</button
+					: ''}">{menu.name}</button
 			>
 		{/each}
 		<!-- <div class="flex flex-row w-60 gap-2 justify-end">
