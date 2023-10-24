@@ -3,19 +3,20 @@
 	import Notepad from '$lib/icons/notepad.svelte'
 	import Message from '$lib/icons/message.svelte'
 	import Search from '$lib/icons/search.svelte'
+	import type { ComponentType } from 'svelte'
 
 	export let name = ''
 
 	const items = {
-		분석의뢰: Security,
-		인증품목: Notepad,
-		인증소개: Message,
-		분석기관: Search
+		분석의뢰: Security as ComponentType,
+		인증품목: Notepad as ComponentType,
+		인증소개: Message as ComponentType,
+		분석기관: Search as ComponentType
 	}
 </script>
 
 <div
-	class="shadow-md rounded-xl bg-white flex flex-col gap-5 items-center w-full justify-center h-56"
+	class="shadow-lg rounded-xl bg-white flex flex-col gap-5 items-center w-full justify-center h-56"
 >
 	<!-- <div class="bg-gray-200 rounded-full h-24 w-24"> -->
 	<svelte:component this={items[name]} />
