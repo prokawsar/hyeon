@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div class="flex flex-col w-full mt-11">
 	<div class="bg-gray-200 flex w-full justify-center py-2">
 		<div class="flex flex-row px-5 md:px-0 max-w-7xl w-full items-center justify-between">
