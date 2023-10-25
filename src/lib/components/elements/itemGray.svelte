@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="relative flex flex-col gap-3 justify-center text-white bg-gray-30 w-[10.5rem] lg:w-52 h-36 items-center rounded-2xl">
+	class="relative flex flex-col gap-3 justify-center text-white bg-gray-30 w-[10.5rem] md:w-44 xl:w-56 h-36 items-center rounded-2xl">
 	<p class="text-lg font-bold text-black">{text}</p>
 	<div class="absolute bottom-2 right-2 bg-[#787878] p-2 rounded-full">
 		<Fa icon={faArrowRight} class="text-white" />
