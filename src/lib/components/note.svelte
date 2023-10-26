@@ -1,7 +1,29 @@
 <script lang="ts">
 	import Fa from 'svelte-fa'
 	import Card from './elements/card.svelte'
-	import { faPlus } from '@fortawesome/free-solid-svg-icons'
+	import { faArrowRight, faChevronRight, faPlus } from '@fortawesome/free-solid-svg-icons'
+	import Notepen from '$lib/icons/notepen.svelte'
+
+	import Swiper from 'swiper'
+	import 'swiper/css'
+	import { onMount, tick } from 'svelte'
+
+	import { register } from 'swiper/element/bundle'
+	import Slider from './elements/slider.svelte'
+	// register Swiper custom elements
+	register()
+
+	onMount(async () => {
+		await tick()
+		const swiper = new Swiper('#swiper', {
+			loop: true,
+			speed: 1000,
+			autoplay: {
+				delay: 1500
+			}
+		})
+		swiper.init()
+	})
 
 	const data = [
 		{
@@ -24,12 +46,35 @@
 
 <div
 	class="flex flex-col p-3 md:flex-row px-3 md:px-0 gap-4 md:gap-6 w-full justify-center max-w-7xl mt-11">
-	<div class="shadow-lg rounded-xl bg-white flex flex-col gap-5 items-center w-full justify-center">
-		text
+	<div class="shadow-lg w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+		<div id="swiper" class="swiper h-full w-full">
+			<div class="swiper-wrapper bg-transparent">
+				{#each Array(3).fill(1) as item, i}
+					<Slider>
+						<div class="flex flex-row justify-between py-10 px-8">
+							<div class="flex flex-col gap-10">
+								<p class="text-3xl font-bold text-white pr-10">
+									성분 분석이 완료 되었습니다 결과를 확인하여 주세요
+								</p>
+								<button
+									class="bg-white w-fit rounded-3xl mt-10 flex flex-row gap-4 items-center px-5 py-2">
+									<span class="text-black">분석결과확인</span>
+									<Fa icon={faChevronRight} />
+								</button>
+							</div>
+
+							<div class="flex items-center">
+								<Notepen />
+							</div>
+						</div>
+					</Slider>
+				{/each}
+			</div>
+		</div>
 	</div>
 
 	<div
-		class="shadow-lg px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center w-full justify-center">
+		class="shadow-lg w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div
 			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full mt-10 pb-5">
 			<p class="text-3xl text-primary-300 font-bold">새로운 소식</p>
