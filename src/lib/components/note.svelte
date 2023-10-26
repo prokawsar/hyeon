@@ -1,26 +1,26 @@
 <script lang="ts">
 	import Fa from 'svelte-fa'
-	import Card from './elements/card.svelte'
-	import { faArrowRight, faChevronRight, faPlus } from '@fortawesome/free-solid-svg-icons'
+	import { faChevronLeft, faChevronRight, faPlay, faPlus } from '@fortawesome/free-solid-svg-icons'
 	import Notepen from '$lib/icons/notepen.svelte'
+	import { onMount, tick } from 'svelte'
+	import Slider from './elements/slider.svelte'
 
 	import Swiper from 'swiper'
 	import 'swiper/css'
-	import { onMount, tick } from 'svelte'
-
 	import { register } from 'swiper/element/bundle'
-	import Slider from './elements/slider.svelte'
 	// register Swiper custom elements
 	register()
 
+	let swiper: Swiper
+
 	onMount(async () => {
 		await tick()
-		const swiper = new Swiper('#swiper', {
+		swiper = new Swiper('#swiper', {
 			loop: true,
-			speed: 1000,
-			autoplay: {
-				delay: 1500
-			}
+			speed: 1000
+			// autoplay: {
+			// 	delay: 1500
+			// }
 		})
 		swiper.init()
 	})
@@ -42,14 +42,18 @@
 			date: '2023-10-14'
 		}
 	]
+
+	let totalSlide = 3,
+		currentSlide = 1
 </script>
 
 <div
 	class="flex flex-col p-3 md:flex-row px-3 md:px-0 gap-4 md:gap-6 w-full justify-center max-w-7xl mt-11">
-	<div class="shadow-lg w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+	<div
+		class="relative shadow-lg w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div id="swiper" class="swiper h-full w-full">
 			<div class="swiper-wrapper bg-transparent">
-				{#each Array(3).fill(1) as item, i}
+				{#each Array(totalSlide).fill(1) as item, i}
 					<Slider>
 						<div class="flex flex-row justify-between py-10 px-8">
 							<div class="flex flex-col gap-10">
@@ -69,6 +73,16 @@
 						</div>
 					</Slider>
 				{/each}
+			</div>
+		</div>
+
+		<div
+			class="absolute bottom-5 z-10 text-white flex flex-row px-10 items-center justify-between w-full">
+			<div>{currentSlide} / {totalSlide}</div>
+			<div class="flex flex-row px-3 py-2 gap-3 rounded-3xl bg-[#82e5de]">
+				<Fa icon={faChevronLeft} />
+				<Fa icon={faPlay} />
+				<Fa icon={faChevronRight} />
 			</div>
 		</div>
 	</div>
