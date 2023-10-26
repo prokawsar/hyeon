@@ -45,29 +45,46 @@
 
 	let totalSlide = 3,
 		currentSlide = 1
+
+	const prevSlide = () => {
+		if (swiper) {
+			swiper.slidePrev()
+		}
+	}
+
+	const playPause = () => {
+		if (swiper) {
+		}
+	}
+
+	const nextSlide = () => {
+		if (swiper) {
+			swiper.slideNext()
+		}
+	}
 </script>
 
 <div
 	class="flex flex-col p-3 md:flex-row px-3 md:px-0 gap-4 md:gap-6 w-full justify-center max-w-7xl mt-11">
 	<div
-		class="relative shadow-lg w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+		class="relative shadow-lg w-full md:w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div id="swiper" class="swiper h-full w-full">
 			<div class="swiper-wrapper bg-transparent">
 				{#each Array(totalSlide).fill(1) as item, i}
 					<Slider>
-						<div class="flex flex-row justify-between py-10 px-8">
+						<div class="flex flex-row justify-between py-10 px-8 mb-10 md:mb-0">
 							<div class="flex flex-col gap-10">
 								<p class="text-3xl font-bold text-white pr-10">
 									성분 분석이 완료 되었습니다 결과를 확인하여 주세요
 								</p>
 								<button
-									class="bg-white w-fit rounded-3xl mt-10 flex flex-row gap-4 items-center px-5 py-2">
+									class="bg-white w-fit rounded-3xl md:mt-10 flex flex-row gap-4 items-center px-5 py-2">
 									<span class="text-black">분석결과확인</span>
 									<Fa icon={faChevronRight} />
 								</button>
 							</div>
 
-							<div class="flex items-center">
+							<div class="flex md:items-center">
 								<Notepen />
 							</div>
 						</div>
@@ -80,15 +97,15 @@
 			class="absolute bottom-5 z-10 text-white flex flex-row px-10 items-center justify-between w-full">
 			<div>{currentSlide} / {totalSlide}</div>
 			<div class="flex flex-row px-3 py-2 gap-3 rounded-3xl bg-[#82e5de]">
-				<Fa icon={faChevronLeft} />
-				<Fa icon={faPlay} />
-				<Fa icon={faChevronRight} />
+				<button on:click={prevSlide}><Fa icon={faChevronLeft} /></button>
+				<button on:click={playPause}><Fa icon={faPlay} /></button>
+				<button on:click={nextSlide}><Fa icon={faChevronRight} /></button>
 			</div>
 		</div>
 	</div>
 
 	<div
-		class="shadow-lg w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+		class="shadow-lg w-full md:w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div
 			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full mt-10 pb-5">
 			<p class="text-3xl text-primary-300 font-bold">새로운 소식</p>
