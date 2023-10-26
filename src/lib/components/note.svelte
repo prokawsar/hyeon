@@ -68,7 +68,7 @@
 	class="flex flex-col p-3 md:flex-row px-3 md:px-0 gap-4 md:gap-6 w-full justify-center max-w-7xl mt-11">
 	<div
 		class="relative shadow-lg w-full md:w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
-		<div id="swiper" class="swiper h-full w-full">
+		<div id="swiper" class="swiper h-full w-full bg-gray-20 rounded-xl">
 			<div class="swiper-wrapper bg-transparent">
 				{#each Array(totalSlide).fill(1) as item, i}
 					<Slider>
