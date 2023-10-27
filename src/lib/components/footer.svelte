@@ -40,7 +40,7 @@
 			class="flex flex-col gap-10 md:flex-row justify-between py-10 w-full md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div class="flex flex-col gap-5 flex-1">
 				<div>
-					<img src="/img/footer-petsafe.png" alt="footer petsafe" class="" />
+					<img src="/svg/footer_petsafe.svg" alt="footer petsafe" class="" />
 				</div>
 
 				<p class="text-sm text-gray-400">
@@ -50,8 +50,10 @@
 				</p>
 			</div>
 
-			<div class="flex-1 flex h-full items-end justify-end">
-				<img src="/img/footer-logo.png" alt="footer logos" class="h-full lg:h-12 lg:w-[420px]" />
+			<div class="flex-1 flex h-full items-end justify-center">
+				<img src="/svg/kolas_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
+				<img src="/svg/ysu_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
+				<img src="/svg/ysa_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
 			</div>
 		</div>
 	</div>

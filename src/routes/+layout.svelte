@@ -3,6 +3,7 @@
 	import { page } from '$app/stores'
 	import { browser } from '$app/environment'
 	import { onMount } from 'svelte'
+	import BackToTop from "$lib/components/elements/BackToTop.svelte";
 
 	onMount(() => {
 		if (browser) {
@@ -13,4 +14,5 @@
 
 <main class="bg-gray-20 pb-5">
 	<slot />
+	<BackToTop />
 </main>
