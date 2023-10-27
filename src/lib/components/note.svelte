@@ -73,14 +73,15 @@
 			<div class="swiper-wrapper bg-transparent">
 				{#each Array(totalSlide).fill(1) as item, i}
 					<Slider>
-						<div class="flex flex-row justify-between py-10 px-8 mb-10 md:mb-0">
-							<div class="flex flex-col gap-10">
-								<p class="text-3xl font-bold text-white pr-10">
+						<div
+							class="flex flex-col gap-5 sm:flex-row items-center justify-between py-10 px-8 mb-10 md:mb-0">
+							<div class="flex flex-col w-full items-center gap-10">
+								<p class="text-lg md:text-3xl font-bold text-white pr-10">
 									성분 분석이 완료 되었습니다 결과를 확인하여 주세요
 								</p>
 								<button
-									class="bg-white w-fit rounded-3xl md:mt-10 flex flex-row gap-4 items-center px-5 py-2">
-									<span class="text-black">분석결과확인</span>
+									class="bg-white w-full justify-center md:w-fit rounded-3xl md:mt-10 flex flex-row gap-4 items-center px-5 py-2">
+									<span class="text-black text-md md:text-xl font-medium">분석결과확인</span>
 									<Fa icon={faChevronRight} />
 								</button>
 							</div>
@@ -109,7 +110,7 @@
 		class="shadow-lg w-full md:w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div
 			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full pb-5">
-			<p class="text-3xl text-primary-300 font-bold">새로운 소식</p>
+			<p class="text-xl md:text-3xl text-primary-300 font-bold">새로운 소식</p>
 			<div class="border rounded-full p-2 w-8 h-8 flex items-center cursor-pointer">
 				<Fa icon={faPlus} />
 			</div>
@@ -117,9 +118,12 @@
 		<table class="w-full">
 			<tbody>
 				{#each data as item, i}
-					<tr class="{data.length == i + 1 ? '' : 'border-b'} border-gray-30 text-xl">
-						<td class="text-primary-300 p-4"> {item.title}</td>
-						<td class="p-4 text-sm lg:text-xl"><a href="/">{item.desc}</a></td>
+					<tr
+						class="{data.length == i + 1
+							? ''
+							: 'border-b'} border-gray-30 text-xl flex flex-col sm:block">
+						<td class="text-primary-300 p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
+						<td class="p-4 text-sm md:text-base lg:text-xl"><a href="/">{item.desc}</a></td>
 						<td class="p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
 					</tr>
 				{/each}
