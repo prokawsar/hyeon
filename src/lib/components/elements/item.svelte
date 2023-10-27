@@ -2,7 +2,8 @@
 	import { faGlobe, faLocationDot, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 	import Fa from 'svelte-fa'
 
-	export let name = ''
+	export let name = '',
+		qa = false
 
 	const items: any = {
 		'카카오톡 문의': faCommentDots,
@@ -13,6 +14,7 @@
 
 <div
 	class="flex flex-col gap-3 justify-center text-white bg-primary-500 w-40 h-36 items-center rounded-2xl">
-	<Fa icon={items[name]} class="" size="3x" />
+	<Fa icon={items[name]} class={qa ? 'hidden' : ''} size="3x" />
+	<p class="text-3xl text-white font-bold {qa ? '' : 'hidden'}">Q/A</p>
 	<p class="text-lg font-bold">{name}</p>
 </div>
