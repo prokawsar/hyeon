@@ -33,7 +33,7 @@
 			</div>
 
 			<div class="flex-1 flex h-full items-end justify-end">
-				<img src="/img/footer-logo.png" alt="footer logos" class="h-16 w-[420px]" />
+				<img src="/img/footer-logo.png" alt="footer logos" class="h-full lg:h-12 lg:w-[420px]" />
 			</div>
 		</div>
 	</div>

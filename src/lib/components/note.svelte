@@ -122,9 +122,10 @@
 						class="{data.length == i + 1
 							? ''
 							: 'border-b'} border-gray-30 text-xl flex flex-col sm:block">
-						<td class="text-primary-300 p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
-						<td class="p-4 text-sm md:text-base lg:text-xl"><a href="/">{item.desc}</a></td>
-						<td class="p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
+						<td class="text-primary-300 p-2 lg:p-4 text-sm md:text-base lg:text-xl">
+							{item.title}</td>
+						<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"><a href="/">{item.desc}</a></td>
+						<td class="p-2 lg:p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
 					</tr>
 				{/each}
 			</tbody>
