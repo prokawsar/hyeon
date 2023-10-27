@@ -2,13 +2,14 @@
 	<div class="bg-gray-200 flex w-full justify-center py-2">
 		<div
 			class="flex flex-row px-5 md:px-0 w-full items-center justify-between md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
-			<div class="flex flex-row gap-3 justify-center max-w-7xl text-gray-400">
+			<div
+				class="flex flex-row gap-1 md:gap-3 text-xs md:text-base justify-center max-w-7xl text-gray-400">
 				<a href="/" class="text-gray-400">회사소개</a> |
 				<a href="/" class="text-gray-400">회사소개</a> |
 				<a href="/" class="text-gray-400">회사소개</a>
 			</div>
 			<div class="flex flex-row justify-center max-w-7xl">
-				<select class="px-5 bg-transparent">
+				<select class="px-2 md:px-5 bg-transparent text-xs md:text-base">
 					<option>Select</option>
 					<option>Select</option>
 					<option>Select</option>

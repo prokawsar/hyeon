@@ -7,9 +7,9 @@
 
 <div class="flex flex-col gap-5 px-3 md:px-0 md:flex-row w-full max-w-7xl justify-between mt-11">
 	<div class="flex flex-col md:flex-row justify-between bg-white rounded-2xl shadow-xl w-full">
-		<div class="md:w-2/5 relative flex flex-col gap-3 pt-7 px-7">
-			<p class="text-3xl font-semibold text-primary-300 mb-5">펫세이프 인증정보</p>
-			<p class="font-normal text-[40px] z-10">
+		<div class="md:w-2/5 relative flex flex-col gap-1 md:gap-3 pt-7 px-7">
+			<p class="text-xl md:text-3xl font-semibold text-primary-300 mb-5">펫세이프 인증정보</p>
+			<p class="font-normal text-2xl md:text-[40px] z-10">
 				<span class="font-bold">인증</span>과 관련된 <span class="font-bold">정보</span>를 확인
 				해보세요
 			</p>
