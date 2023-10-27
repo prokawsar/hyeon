@@ -18,8 +18,7 @@
 			</div>
 		</div>
 
-		<div
-			class="md:w-3/5 grid grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-4 p-2 md:p-5">
+		<div class="md:w-3/5 grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 p-2 md:p-5">
 			{#each texts as text}
 				<ItemGray {text} />
 			{/each}
