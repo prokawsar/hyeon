@@ -13,16 +13,11 @@
 				>E-mail. acdef@petsafe.co.kr</span>
 		</div>
 
-		<div class="grid grid-cols-2 md:flex md:flex-row gap-5">
+		<div class="grid grid-cols-2 lg:flex lg:flex-row gap-5">
 			<Item name="카카오톡 문의" />
 			<Item name="온라인 문의" />
 			<Item name="찾아오시는 길" />
-
-			<div
-				class="flex flex-col gap-3 justify-center text-white bg-primary-500 w-40 h-36 items-center rounded-2xl">
-				<p class="text-3xl text-white font-bold">Q/A</p>
-				<p class="text-lg font-bold">자주묻는 질문</p>
-			</div>
+			<Item name="자주묻는 질문" qa />
 		</div>
 	</div>
 </div>
