@@ -11,7 +11,8 @@
 	let activeMenu = '분석기관'
 </script>
 
-<div class="flex flex-row w-full py-4 px-5 justify-between md:px-3 max-w-7xl">
+<div
+	class="flex flex-row w-full py-4 px-5 justify-between md:px-3 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 	<a class="flex items-center w-[35%] h-full" href="/">
 		<img src="img/logo.png" alt="logo" class="" />
 	</a>

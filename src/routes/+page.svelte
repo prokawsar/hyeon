@@ -17,11 +17,13 @@
 
 <div class="flex flex-col justify-center items-center w-full mx-auto">
 	<Header />
-	<!-- <Banner /> -->
 	<Hero />
-	<Note />
-	<Features />
-	<Announce />
-	<Contact />
+	<div
+		class="flex flex-col items-center md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl justify-center w-full">
+		<Note />
+		<Features />
+		<Announce />
+		<Contact />
+	</div>
 	<Footer />
 </div>

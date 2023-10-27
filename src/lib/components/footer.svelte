@@ -1,6 +1,7 @@
 <div class="flex flex-col w-full mt-11">
 	<div class="bg-gray-200 flex w-full justify-center py-2">
-		<div class="flex flex-row px-5 md:px-0 max-w-7xl w-full items-center justify-between">
+		<div
+			class="flex flex-row px-5 md:px-0 w-full items-center justify-between md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div class="flex flex-row gap-3 justify-center max-w-7xl text-gray-400">
 				<a href="/" class="text-gray-400">회사소개</a> |
 				<a href="/" class="text-gray-400">회사소개</a> |
@@ -16,7 +17,8 @@
 		</div>
 	</div>
 	<div class="flex flex-row w-full gap-3 px-5 md:px-0 justify-center">
-		<div class="flex flex-col gap-10 md:flex-row max-w-7xl justify-between py-10 w-full">
+		<div
+			class="flex flex-col gap-10 md:flex-row justify-between py-10 w-full md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div class="flex flex-col gap-5 flex-1">
 				<div>
 					<img src="/img/footer-petsafe.png" alt="footer petsafe" class="" />

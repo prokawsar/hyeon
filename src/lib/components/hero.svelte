@@ -3,7 +3,8 @@
 	<img src="img/hero.png" alt="hero" class="md:h-auto h-[700px] object-cover max-w-full" />
 
 	<div class="absolute inset-y-0 left-0 flex items-center w-full justify-center">
-		<div class="flex flex-col md:flex-row w-full max-w-7xl px-5">
+		<div
+			class="flex flex-col md:flex-row w-full px-5 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div class="flex-1 flex flex-col gap-8">
 				<h1 class="text-white text-5xl font-bold">
 					펫세이프는,<br /> 반려동물의 안전과 보호를 위한 인증제도 입니다
