@@ -1,4 +1,22 @@
-<div class="flex flex-col w-full mt-11">
+<script>
+	import Fa from 'svelte-fa'
+	import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+</script>
+
+<div class="flex flex-col items-center w-full mt-11">
+	<div
+		class="flex w-full mb-2 px-5 md:px-0 justify-end md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+		<button
+			on:click={() =>
+				window.scrollTo({
+					behavior: 'smooth',
+					top: 0
+				})}
+			class="bg-[#787878] w-8 flex justify-center p-2 rounded-full">
+			<Fa icon={faArrowUp} class="text-white" />
+		</button>
+	</div>
+
 	<div class="bg-gray-200 flex w-full justify-center py-2">
 		<div
 			class="flex flex-row px-5 md:px-0 w-full items-center justify-between md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
