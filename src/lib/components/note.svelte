@@ -119,8 +119,8 @@
 				{#each data as item, i}
 					<tr class="{data.length == i + 1 ? '' : 'border-b'} border-gray-30 text-xl">
 						<td class="text-primary-300 p-4"> {item.title}</td>
-						<td class="p-4"><a href="/">{item.desc}</a></td>
-						<td class="p-4 text-gray-400"> {item.date} </td>
+						<td class="p-4 text-sm lg:text-xl"><a href="/">{item.desc}</a></td>
+						<td class="p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
 					</tr>
 				{/each}
 			</tbody>
