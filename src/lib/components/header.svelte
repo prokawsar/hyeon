@@ -21,7 +21,7 @@
 				on:click={() => (activeMenu = menu.name)}
 				class="text-xl font-medium {activeMenu == menu.name
 					? 'border-b-2 border-b-primary-400 text-primary-400'
-					: ''}">{menu.name}</button>
+					: 'text-gray-400 hover:text-black'}">{menu.name}</button>
 		{/each}
 		<!-- <div class="flex flex-row w-60 gap-2 justify-end">
 			<button> sign in </button>
