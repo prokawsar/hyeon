@@ -18,5 +18,5 @@
 <button
 	class="shadow-lg rounded-xl bg-white hover:bg-slate-50 flex flex-col gap-5 items-center w-full justify-center h-56">
 	<svelte:component this={items[name]} />
-	<p class="capitalize text-lg lg:text-xl font-medium">{name}</p>
+	<p class="capitalize text-base lg:text-xl font-medium">{name}</p>
 </button>
