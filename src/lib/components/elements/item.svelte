@@ -12,9 +12,9 @@
 	}
 </script>
 
-<div
-	class="flex flex-col gap-3 justify-center text-white bg-primary-500 w-full md:w-40 h-36 items-center rounded-2xl">
+<button
+	class="flex flex-col gap-3 justify-center text-white bg-primary-500 hover:bg-primary-400 w-full md:w-40 h-36 items-center rounded-2xl">
 	<Fa icon={items[name]} class={qa ? 'hidden' : ''} size="3x" />
 	<p class="text-3xl text-white font-bold {qa ? '' : 'hidden'}">Q/A</p>
 	<p class="text-sm md:text-lg font-bold">{name}</p>
-</div>
+</button>
