@@ -18,6 +18,7 @@
 		swiper = new Swiper('#swiper', {
 			loop: true,
 			speed: 1000,
+			spaceBetween: 10,
 			autoplay: {
 				delay: 3000
 			}
