@@ -1,0 +1,43 @@
+[debug] [2023-10-27T12:36:31.291Z] ----------------------------------------------------------------------
+[debug] [2023-10-27T12:36:31.293Z] Command:       /opt/homebrew/Cellar/node/20.5.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2023-10-27T12:36:31.293Z] CLI Version:   12.6.1
+[debug] [2023-10-27T12:36:31.293Z] Platform:      darwin
+[debug] [2023-10-27T12:36:31.293Z] Node Version:  v20.5.0
+[debug] [2023-10-27T12:36:31.293Z] Time:          Fri Oct 27 2023 21:36:31 GMT+0900 (Korean Standard Time)
+[debug] [2023-10-27T12:36:31.293Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-27T12:36:31.329Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-27T12:36:31.329Z] > authorizing via signed-in user (petsafe220408@gmail.com)
+[debug] [2023-10-27T12:36:31.329Z] [iam] checking project pet-safe-web for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-27T12:36:31.330Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pet-safe-web:testIamPermissions [none]
+[debug] [2023-10-27T12:36:31.330Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pet-safe-web:testIamPermissions x-goog-quota-user=projects/pet-safe-web
+[debug] [2023-10-27T12:36:31.330Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pet-safe-web:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-27T12:36:32.332Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pet-safe-web:testIamPermissions 200
+[debug] [2023-10-27T12:36:32.333Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pet-safe-web:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-27T12:36:32.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pet-safe-web [none]
+[debug] [2023-10-27T12:36:33.162Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pet-safe-web 200
+[debug] [2023-10-27T12:36:33.163Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pet-safe-web {"projectId":"pet-safe-web","projectNumber":"715068324188","displayName":"pet-safe-web","name":"projects/pet-safe-web","resources":{"hostingSite":"pet-safe-web"},"state":"ACTIVE","etag":"1_c1e77969-30fe-4ebf-bc24-728c52a5b68c"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-10-27T12:36:40.171Z] Error: Error: Required "hosting.public" field not found for hosting configuration.
+    at extractHostingConfig (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/svelte-adapter-firebase@0.15.0_@sveltejs+kit@1.27.1/node_modules/svelte-adapter-firebase/src/utils.js:89:9)
+    at parseFirebaseConfiguration (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/svelte-adapter-firebase@0.15.0_@sveltejs+kit@1.27.1/node_modules/svelte-adapter-firebase/src/utils.js:138:24)
+    at adapt (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/svelte-adapter-firebase@0.15.0_@sveltejs+kit@1.27.1/node_modules/svelte-adapter-firebase/src/index.js:27:35)
+    at adapt (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/@sveltejs+kit@1.27.1_svelte@4.2.2_vite@4.5.0/node_modules/@sveltejs/kit/src/core/adapt/index.js:26:8)
+    at finalise (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/@sveltejs+kit@1.27.1_svelte@4.2.2_vite@4.5.0/node_modules/@sveltejs/kit/src/exports/vite/index.js:810:13)
+    at async Object.handler (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/@sveltejs+kit@1.27.1_svelte@4.2.2_vite@4.5.0/node_modules/@sveltejs/kit/src/exports/vite/index.js:832:5)
+    at async PluginDriver.hookParallel (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/rollup@3.29.4/node_modules/rollup/dist/es/shared/node-entry.js:25466:17)
+    at async Object.close (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/rollup@3.29.4/node_modules/rollup/dist/es/shared/node-entry.js:26726:13)
+    at async Module.build (file:///Users/hyeonrue/Documents/dev/Petsafe/node_modules/.pnpm/vite@4.5.0_@types+node@20.8.9/node_modules/vite/dist/node/chunks/dep-bb8a8339.js:48095:13)
+    at async build (/opt/homebrew/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:63:5)
+[error] 
+[error] Error: An unexpected error has occurred.
