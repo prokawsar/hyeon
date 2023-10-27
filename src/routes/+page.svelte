@@ -2,7 +2,6 @@
 	// import { i, languages, switchLanguage } from '@inlang/sdk-js';
 
 	import Header from '$lib/components/header.svelte'
-	import Banner from '$lib/components/banner.svelte'
 	import Hero from '$lib/components/hero.svelte'
 	import Features from '$lib/components/features.svelte'
 	import Footer from '$lib/components/footer.svelte'

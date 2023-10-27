@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Fa from 'svelte-fa'
-	import { faChevronLeft, faChevronRight, faPlay, faPlus } from '@fortawesome/free-solid-svg-icons'
+	import {
+		faChevronLeft,
+		faChevronRight,
+		faPause,
+		faPlay,
+		faPlus
+	} from '@fortawesome/free-solid-svg-icons'
 	import Notepen from '$lib/icons/notepen.svelte'
 	import { onMount, tick } from 'svelte'
 	import Slider from './elements/slider.svelte'
@@ -45,7 +51,8 @@
 	]
 
 	let totalSlide = 3,
-		currentSlide = 1
+		currentSlide = 1,
+		isAutoPlay = true
 
 	const prevSlide = () => {
 		if (swiper) {
@@ -55,6 +62,13 @@
 
 	const playPause = () => {
 		if (swiper) {
+			if (isAutoPlay) {
+				swiper.autoplay.pause()
+				isAutoPlay = false
+			} else {
+				swiper.autoplay.start()
+				isAutoPlay = true
+			}
 		}
 	}
 
@@ -100,7 +114,7 @@
 			<div>{currentSlide} / {totalSlide}</div>
 			<div class="flex flex-row px-3 py-2 gap-3 rounded-3xl bg-[#82e5de]">
 				<button on:click={prevSlide}><Fa icon={faChevronLeft} /></button>
-				<button on:click={playPause}><Fa icon={faPlay} /></button>
+				<button on:click={playPause}><Fa icon={isAutoPlay ? faPause : faPlay} /></button>
 				<button on:click={nextSlide}><Fa icon={faChevronRight} /></button>
 			</div>
 		</div>
