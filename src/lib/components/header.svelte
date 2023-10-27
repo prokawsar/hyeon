@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Fa from 'svelte-fa'
 	import { faBars } from '@fortawesome/free-solid-svg-icons'
+	import { slide } from 'svelte/transition'
 
 	const menus = [
 		{ name: '분석기관', url: '/' },
@@ -8,7 +9,8 @@
 		{ name: '안전인증', url: '/' },
 		{ name: '커뮤니티', url: '/' }
 	]
-	let activeMenu = '분석기관'
+	let activeMenu = '분석기관',
+		showMobileMenu = false
 </script>
 
 <div
@@ -24,11 +26,6 @@
 					? 'border-b-2 border-b-primary-400 text-primary-400'
 					: 'text-gray-400 hover:text-black'}">{menu.name}</button>
 		{/each}
-		<!-- <div class="flex flex-row w-60 gap-2 justify-end">
-			<button> sign in </button>
-			<span>|</span>
-			<button> sign up </button>
-		</div> -->
 	</div>
 	<div class="flex items-center justify-end w-[30%]">
 		<div class="hidden md:flex flex-row gap-3 text-sm font-normal">
@@ -36,6 +33,23 @@
 			<span>|</span>
 			<button> 회원가입 </button>
 		</div>
-		<Fa icon={faBars} size="1.2x" class="cursor-pointer sm:hidden" />
+		<button on:click={() => (showMobileMenu = !showMobileMenu)}>
+			<Fa icon={faBars} size="1.2x" class="cursor-pointer sm:hidden" />
+		</button>
 	</div>
 </div>
+{#if showMobileMenu}
+	<div
+		transition:slide={{ duration: 300, delay: 50 }}
+		class="absolute top-12 w-full bg-gray-20 z-10">
+		<div class="flex flex-col gap-2 w-full justify-start">
+			{#each menus as menu}
+				<button
+					on:click={() => (activeMenu = menu.name)}
+					class="text-base font-medium py-2 {activeMenu == menu.name
+						? 'border-b-2 border-b-primary-400 text-primary-400'
+						: 'text-gray-400 hover:text-black'}">{menu.name}</button>
+			{/each}
+		</div>
+	</div>
+{/if}
