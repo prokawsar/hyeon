@@ -8,7 +8,7 @@
 		faPlus
 	} from '@fortawesome/free-solid-svg-icons'
 	import Notepen from '$lib/icons/notepen.svelte'
-	import { onMount, tick } from 'svelte'
+	import { onDestroy, onMount, tick } from 'svelte'
 	import Slider from './elements/slider.svelte'
 
 	import Swiper from 'swiper'
@@ -18,11 +18,13 @@
 	register()
 
 	let swiper: Swiper
+	let totalSlide = 3,
+		isAutoPlay = true,
+		activeSlideIndex = 0
 
 	onMount(async () => {
 		await tick()
 		swiper = new Swiper('#swiper', {
-			loop: true,
 			speed: 1000,
 			spaceBetween: 10,
 			autoplay: {
@@ -30,6 +32,17 @@
 			}
 		})
 		swiper.init()
+		activeSlideIndex = swiper.activeIndex
+
+		swiper.on('slideChange', () => {
+			activeSlideIndex = swiper.activeIndex
+		})
+	})
+
+	onDestroy(() => {
+		if (swiper) {
+			swiper.destroy()
+		}
 	})
 
 	const data = [
@@ -49,10 +62,6 @@
 			date: '2023-10-14'
 		}
 	]
-
-	let totalSlide = 3,
-		currentSlide = 1,
-		isAutoPlay = true
 
 	const prevSlide = () => {
 		if (swiper) {
@@ -111,7 +120,7 @@
 
 		<div
 			class="absolute bottom-5 z-10 text-white flex flex-row px-10 items-center justify-between w-full">
-			<div>{currentSlide} / {totalSlide}</div>
+			<div>{activeSlideIndex + 1} / {totalSlide}</div>
 			<div class="flex flex-row px-3 py-2 gap-3 rounded-3xl bg-[#82e5de]">
 				<button on:click={prevSlide}><Fa icon={faChevronLeft} /></button>
 				<button on:click={playPause}><Fa icon={isAutoPlay ? faPause : faPlay} /></button>
