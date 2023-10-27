@@ -17,10 +17,10 @@
 		await tick()
 		swiper = new Swiper('#swiper', {
 			loop: true,
-			speed: 1000
-			// autoplay: {
-			// 	delay: 1500
-			// }
+			speed: 1000,
+			autoplay: {
+				delay: 3000
+			}
 		})
 		swiper.init()
 	})
@@ -107,7 +107,7 @@
 	<div
 		class="shadow-lg w-full md:w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div
-			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full mt-10 pb-5">
+			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full pb-5">
 			<p class="text-3xl text-primary-300 font-bold">새로운 소식</p>
 			<div class="border rounded-full p-2 w-8 h-8 flex items-center cursor-pointer">
 				<Fa icon={faPlus} />
@@ -118,7 +118,7 @@
 				{#each data as item, i}
 					<tr class="{data.length == i + 1 ? '' : 'border-b'} border-gray-30 text-xl">
 						<td class="text-primary-300 p-4"> {item.title}</td>
-						<td class="p-4"> {item.desc}</td>
+						<td class="p-4"><a href="/">{item.desc}</a></td>
 						<td class="p-4 text-gray-400"> {item.date} </td>
 					</tr>
 				{/each}
