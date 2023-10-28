@@ -1,5 +1,5 @@
 <script>
-	import Item from './elements/item.svelte'
+	import Item from '../../../elements/item.svelte'
 </script>
 
 <div class="flex flex-col gap-5 px-3 md:px-0 md:flex-row w-full max-w-7xl justify-between mt-11">

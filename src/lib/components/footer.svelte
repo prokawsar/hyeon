@@ -50,10 +50,10 @@
 				</p>
 			</div>
 
-			<div class="flex-1 flex h-full items-end justify-center">
-				<img src="/svg/kolas_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
-				<img src="/svg/ysu_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
-				<img src="/svg/ysa_logo.svg" alt="footer logo" class="lg:h-12 m-4" />
+			<div class="flex-1 flex w-full items-end justify-center md:flex-row p-1 md:w-fit">
+				<img src="/svg/kolas_logo.svg" alt="footer logo" class="lg:h-12 m-1" />
+				<img src="/svg/ysu_logo.svg" alt="footer logo" class="lg:h-12 m-1" />
+				<img src="/svg/ysa_logo.svg" alt="footer logo" class="lg:h-12 m-1" />
 			</div>
 		</div>
 	</div>

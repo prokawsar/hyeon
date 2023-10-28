@@ -13,8 +13,8 @@ export default {
 				primary: {
 					300: '#60D8CE',
 					400: '#03C1B1',
-					500: '#30D5C8'
-
+					500: '#30D5C8',
+					'text': '#20B9AE'
 					// flowbite colors
 					// 50: '#FFF5F2',
 					// 100: '#FFF1EE',

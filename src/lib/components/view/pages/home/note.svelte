@@ -9,7 +9,7 @@
 	} from '@fortawesome/free-solid-svg-icons'
 	import Notepen from '$lib/icons/notepen.svelte'
 	import { onDestroy, onMount, tick } from 'svelte'
-	import Slider from './elements/slider.svelte'
+	import Slider from '../../../elements/slider.svelte'
 
 	import Swiper from 'swiper'
 	import 'swiper/css'
@@ -147,7 +147,7 @@
 							: 'border-b'} border-gray-30 text-xl flex flex-col sm:block">
 						<td class="text-primary-300 p-2 lg:p-4 text-sm md:text-base lg:text-xl">
 							{item.title}</td>
-						<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"><a href="/">{item.desc}</a></td>
+						<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"><a href="/static">{item.desc}</a></td>
 						<td class="p-2 lg:p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
 					</tr>
 				{/each}

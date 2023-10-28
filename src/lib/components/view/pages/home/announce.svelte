@@ -1,6 +1,6 @@
 <script>
 	import Mike from '$lib/icons/mike.svelte'
-	import ItemGray from './elements/itemGray.svelte'
+	import ItemGray from '../../../elements/itemGray.svelte'
 
 	const texts = ['분석정보', '분석정보', '분석정보', '분석정보', '분석정보', '분석정보']
 </script>
