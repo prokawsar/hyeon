@@ -13,6 +13,9 @@
 </script>
 
 <main class="bg-gray-20 pb-5">
-	<slot />
+	<div class="overflow-scroll pt-16">
+		<slot />
+	</div>
+
 	<BackToTop />
 </main>

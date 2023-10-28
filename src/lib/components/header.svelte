@@ -16,23 +16,28 @@
 	]
 
 	$: activeUrl = $page.url.pathname;
-	let activeClass = 'text-xl md:text-sm xl:text-xl font-medium border-b-2 border-b-primary-400 text-primary-400';
-	let nonActiveClass = 'text-xl md:text-sm xl:text-xl font-medium text-gray-700 hover:text-black';
+	let activeClass = 'text-xl md:text-sm xl:text-xl font-medium border-b-2 border-b-primary-400 text-primary-400 items-center';
+	let nonActiveClass = 'text-xl md:text-sm xl:text-xl font-medium text-gray-700 hover:text-black items-center';
 
-	}
 </script>
+<div class="relative px-8">
+	<Navbar class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b" >
+		<NavBrand href="/">
+			<img src="svg/logo.svg" class="mr-3 h-6 sm:h-9" alt="logo" />
+		</NavBrand>
+		<div class="flex md:order-2">
+			<NavHamburger/>
+			<Button size="sm">Get started</Button>
+		</div>
 
-<Navbar >
-	<NavBrand href="/">
-		<img src="svg/logo.svg" class="mr-3 h-6 sm:h-9" alt="logo" />
-	</NavBrand>
-	<NavHamburger  />
-	<NavUl {activeClass} {nonActiveClass} {activeUrl}>
-		{#each menus as menu}
-			<NavLi href={menu.url}>{menu.name}</NavLi>
-		{/each}
-	</NavUl>
-</Navbar>
+		<NavUl {activeClass} {nonActiveClass} {activeUrl}>
+			{#each menus as menu}
+				<NavLi href={menu.url}>{menu.name}</NavLi>
+			{/each}
+		</NavUl>
+	</Navbar>
+</div>
+
 
 <!--<div-->
 <!--	class="flex flex-row w-full py-4 px-5 justify-between md:px-3 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">-->
