@@ -4,6 +4,7 @@
 	import { browser } from '$app/environment'
 	import { onMount } from 'svelte'
 	import BackToTop from "$lib/components/elements/BackToTop.svelte";
+	import Header from "$lib/components/header.svelte";
 
 	onMount(() => {
 		if (browser) {
@@ -12,8 +13,10 @@
 	})
 </script>
 
-<main class="bg-gray-20 pb-5">
-	<div class="overflow-scroll pt-16">
+<Header />
+<main class="bg-gray-20">
+
+	<div class="overflow-scroll mt-[81px]">
 		<slot />
 	</div>
 

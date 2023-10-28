@@ -53,7 +53,7 @@
 
 
         </TabItem>
-        <TabItem open title="분석기관소개" activeClasses="inline-block p-4 border-b-2 border-primary-text rounded-t-lg">
+        <TabItem title="분석기관소개" activeClasses="inline-block p-4 border-b-2 border-primary-text rounded-t-lg">
             <p class="text-sm text-gray-500 dark:text-gray-400">
                 <b>Profile:</b>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -8,7 +8,6 @@
 	import Contact from '$lib/components/view/pages/home/contact.svelte'
 	import Announce from '$lib/components/view/pages/home/announce.svelte'
 	import Note from '$lib/components/view/pages/home/note.svelte'
-	import {SpeedDial, SpeedDialButton} from "flowbite-svelte";
 </script>
 
 <svelte:head>
