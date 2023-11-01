@@ -6,7 +6,7 @@
 		<div
 			class="flex flex-col md:flex-row w-full px-5 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div class="flex-1 flex flex-col gap-8">
-				<h1 class="text-white text-5xl font-bold">
+				<h1 class="text-white text-4xl sm:text-5xl font-bold">
 					펫세이프는,<br /> 반려동물의 안전과 보호를 위한 인증제도 입니다
 				</h1>
 				<p class="text-xl font-medium text-slate-200">

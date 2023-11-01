@@ -27,12 +27,11 @@
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<button on:click={() =>
-				window.scrollTo({
+<button on:click={() => window.scrollTo({
 					behavior: 'smooth',
 					top: 0
 				})}
-        class="bg-[#787878] w-12 h-12 flex items-center justify-center p-2 rounded-full opacity-1 hidden:opacity-0 fixed bottom-10 right-10" class:hidden>
+        class="bg-[#787878] w-12 h-12 flex items-center justify-center p-2 rounded-full opacity-1 hidden:opacity-0 fixed bottom-10 right-10 z-50" class:hidden>
     <Fa icon={faArrowUp} class="text-white text-2xl" />
 </button>
 
