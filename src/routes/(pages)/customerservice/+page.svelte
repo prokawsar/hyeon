@@ -4,6 +4,7 @@
 	import MainTab from '$lib/components/view/pages/customerservice/MainTab.svelte'
 	import { csTabs } from '$lib/utils/const'
 	import CsHero from '$lib/components/view/pages/customerservice/CsHero.svelte'
+	import Notice from '$lib/components/view/pages/customerservice/Notice.svelte'
 
 	let activeTab = csTabs[0]
 </script>
@@ -12,7 +13,7 @@
 	<CsHero />
 	<MainTab bind:activeTab />
 	{#if activeTab == csTabs[0]}
-		<div>Notice</div>
+		<Notice />
 	{:else if activeTab == csTabs[1]}
 		<div>Faq</div>
 	{:else if activeTab == csTabs[2]}
