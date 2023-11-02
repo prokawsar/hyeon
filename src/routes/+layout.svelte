@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '../app.css'
 	import { browser } from '$app/environment'
 	import { onMount } from 'svelte'
@@ -7,12 +7,17 @@
 	import { Button, Modal } from 'flowbite-svelte'
 	import Footer from '$lib/components/footer.svelte'
 
+	type DeploymentInfo = {
+		commitMeesage: string
+	}
+
 	onMount(() => {
 		if (browser) {
 			import('$lib/utils/tooltip')
 		}
 	})
-	export let data
+
+	export let data: DeploymentInfo
 </script>
 
 <Header />
