@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Input } from 'flowbite-svelte'
-	import { SearchOutline } from 'flowbite-svelte-icons'
+	import { Input, Pagination } from 'flowbite-svelte'
+	import { ChevronLeftOutline, ChevronRightOutline, SearchOutline } from 'flowbite-svelte-icons'
 	const data = [
 		{
 			title: '보도자료',
@@ -33,10 +33,12 @@
 			date: '2023-10-14'
 		}
 	]
+
+	let pages = [{ name: '1' }, { name: '2' }, { name: '3' }, { name: '4' }, { name: '5' }]
 </script>
 
-<div class="w-full px-[10%]">
-	<div class="flex flex-row justify-between mt-8 mb-2 pb-5 border-b-2 border-black">
+<div class="w-full px-[10%] my-10">
+	<div class="flex flex-row justify-between mt-5 mb-2 pb-5 border-b-2 border-black">
 		<p class="text-3xl font-medium">전체게시물</p>
 		<div>
 			<Input class="rounded-none" type="text" placeholder="Search" size="md">
@@ -60,4 +62,21 @@
 			{/each}
 		</tbody>
 	</table>
+
+	<div class="flex justify-center">
+		<Pagination
+			{pages}
+			on:previous={() => console.log('prev')}
+			on:next={() => console.log('next')}
+			icon>
+			<svelte:fragment slot="prev">
+				<span class="sr-only">Previous</span>
+				<ChevronLeftOutline class="w-2.5 h-2.5" />
+			</svelte:fragment>
+			<svelte:fragment slot="next">
+				<span class="sr-only">Next</span>
+				<ChevronRightOutline class="w-2.5 h-2.5" />
+			</svelte:fragment>
+		</Pagination>
+	</div>
 </div>
