@@ -5,6 +5,7 @@
 	import BackToTop from "$lib/components/elements/BackToTop.svelte";
 	import Header from "$lib/components/header.svelte";
 	import {Button, Modal} from "flowbite-svelte";
+	import Footer from '$lib/components/footer.svelte'
 
 	onMount(() => {
 		if (browser) {
@@ -27,4 +28,6 @@
 			<Button color="alternative">확인</Button>
 		</svelte:fragment>
 	</Modal>
+
 </main>
+<Footer />

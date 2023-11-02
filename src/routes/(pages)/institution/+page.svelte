@@ -13,5 +13,4 @@
 <div class="flex flex-col justify-center items-center w-full mx-auto">
 	<HeroInstitution />
 	<MainTab/>
-	<Footer />
 </div>
