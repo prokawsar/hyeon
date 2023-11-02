@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Input, Pagination } from 'flowbite-svelte'
+	import { Button, Input, Pagination } from 'flowbite-svelte'
 	import { ChevronLeftOutline, ChevronRightOutline, SearchOutline } from 'flowbite-svelte-icons'
 	const data = [
 		{
@@ -74,7 +74,7 @@
 		</tbody>
 	</table>
 
-	<div class="flex justify-center my-5">
+	<div class="relative flex justify-center my-5">
 		<Pagination
 			{pages}
 			on:previous={() => console.log('prev')}
@@ -89,5 +89,9 @@
 				<ChevronRightOutline class="w-2.5 h-2.5" />
 			</svelte:fragment>
 		</Pagination>
+
+		<div class="absolute right-0">
+			<Button class="bg-[#191919] text-white rounded-full px-8" size="sm">글쓰기</Button>
+		</div>
 	</div>
 </div>
