@@ -74,10 +74,17 @@
 
                 <div class="py-10"></div>
 
-                <div class="border-gray-30 border-2 rounded-2xl w-full p-6">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KOLAS 국제공인 시험기관 이란?</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">국가표준제도 확립 및 산업표준화제도 운영, 시험기관 및 검사기관 인정제도의 운영,</p>
-                    <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">표준화 및 국가간 국제기구 협력 및 교류에 대한 업무를 권장하는 국가기술표준원이 운영하는 조직입니다.</p>
+                <div class="border-gray-30 border-2 rounded-2xl w-full p-6 flex flex-col sm:flex-row">
+                    <div class="w-full p-6">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KOLAS 국제공인 시험기관 이란?</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight whitespace-pre-line">
+                            국가표준제도 확립 및 산업표준화제도 운영, 시험기관 및 검사기관 인정제도의 운영,
+                            표준화 및 국가간 국제기구 협력 및 교류에 대한 업무를 권장하는 국가기술표준원이 운영하는 조직입니다.
+                        </p>
+                    </div>
+                    <div class="p-6">
+                        <img src="/svg/kolas_logo.svg" alt="KOLAS logo" class="w-[200px] object-cover"/>
+                    </div>
                 </div>
             </div>
 

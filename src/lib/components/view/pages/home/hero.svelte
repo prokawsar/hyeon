@@ -14,7 +14,8 @@
 				<p class="text-lg font-medium text-slate-200 whitespace-pre-line">
 					국제공인분석기관의 엄격한 테스트를 통과한,
 					안전하고 신뢰할 수 있는 제품과 서비스에만
-					수여하는 반려동물 생활용품 안전인증 마크입니다.
+					수여하는 반려동물 생활용품 안전인증
+					마크입니다.
 				</p>
 			</div>
 			<div class="flex-1" />
