@@ -25,7 +25,10 @@
     <Tabs style={"underline"} defaultClass="w-[100%] flex content-start items-start space-x-2 text-sm font-medium text-center text-primary-text border-b border-gray-200 dark:text-gray-400 dark:border-gray-700" contentClass="mt-8">
         <TabItem open title="인증기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
             <div class="w-[100%] flex flex-col items-start px-4 sm:px-0">
-                <img src="/svg/kpscc.svg" alt="KPSCC" class="h-40 mb-3">
+                <div class="flex justify-center items-center relative">
+                    <img src="/svg/grid.svg" alt="grid" class="h-40 mb-3"/>
+                    <img src="/svg/kpscc.svg" alt="kpscc" class="absolute w-[60%] py-2"/>
+                </div>
 
                 <div class="py-6"></div>
 
@@ -60,10 +63,14 @@
 
         </TabItem>
         <TabItem open title="분석기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
-            <div class="w-[100%] flex flex-col items-start px-4 sm:px-0">
-                <img src="/svg/kpscc.svg" alt="KPSCC" class="h-40 mb-3">
+            <div class="w-[100%] flex flex-col items-start px-4 md:px-0">
+                <div class="flex justify-center items-center relative">
+                    <img src="/svg/grid.svg" alt="grid" class="h-40 mb-3"/>
+                    <img src="/svg/ysa_logo.svg" alt="ysa" class="absolute w-[60%] py-2"/>
+                </div>
 
-                <div class="py-6"></div>
+
+                <div class="py-2 md:py-6"></div>
 
                 <!--와이에스환경기술연구원-->
                 <P class="text-2xl">'와이에스환경기술연구원'은</P>
@@ -72,10 +79,19 @@
                 <P class="">인증된 시험법에 따라 환경/화학/의료 분야에서 시험분석, 품질검사, 품질보증 서비스를 제공하고 있습니다.</P>
                 <P class="">최고의 연구진과 최첨단 장비들을 기반으로 신속하고 정확하며, 무엇보다 신뢰할 수 있는 정밀한 시험분석결과를 제공하도록 최선을 다하겠습니다.</P>
 
-                <div class="py-10"></div>
+                <div class="py-5 md:py-10"></div>
+
+                <div class="grid grid-cols-2 gap-0.5 md:grid-cols-4 md:gap-3">
+                    <img src="/img/institution_intro_one.png" alt="institution_intro_one">
+                    <img src="/img/institution_intro_two.png" alt="institution_intro_one">
+                    <img src="/img/institution_intro_three.png" alt="institution_intro_one">
+                    <img src="/img/institution_intro_four.png" alt="institution_intro_one">
+                </div>
+
+                <div class="py-5 md:py-10"></div>
 
                 <div class="border-gray-30 border-2 rounded-2xl w-full p-6 flex flex-col sm:flex-row">
-                    <div class="w-full p-6">
+                    <div class="w-full p-1 sm:p-4">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KOLAS 국제공인 시험기관 이란?</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight whitespace-pre-line">
                             국가표준제도 확립 및 산업표준화제도 운영, 시험기관 및 검사기관 인정제도의 운영,
@@ -84,6 +100,34 @@
                     </div>
                     <div class="p-6">
                         <img src="/svg/kolas_logo.svg" alt="KOLAS logo" class="w-[200px] object-cover"/>
+                    </div>
+                </div>
+
+                <div class="py-5 md:py-10"></div>
+
+
+
+                <div class="border-gray-30 border-2 rounded-2xl w-full p-6 flex flex-col sm:flex-row">
+                    <div class="w-full p-1 sm:p-4">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KOLAS 국제공인 시험기관 이란?</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight whitespace-pre-line">
+                            KOLAS인정은 시험기관의 품질 시스템/ 기술능력평가/ 특정분야에 대한 시험능력이
+                            있다는 것을 공식적으로 인정하는 제도를 말하며 국제공인시험기관 인증으로 ILAC과 MRA된
+                            국가에서 소급적용을 받을 수 있습니다.
+                        </p>
+                        <div class="justify-center items-center self-center w-full my-4">
+                            <div class="flex justify-center">
+                                <div class="flex items-center"><img src="/svg/checked.svg" alt="checked" class="h-8"/>ILAC 상호인정</div>
+                                <div class="px-2"></div>
+                                <div class="flex items-center"><img src="/svg/checked.svg" alt="checked" class="h-8"/>ISO/IEC 17025 적합성평가</div>
+                            </div>
+                            <div class="flex h-[100px] md:h-[130px] justify-center my-6">
+                                <img src="/img/kolas_diagram.png" alt="KOLAS diagram" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex p-6 justify-center">
+                        <img src="/img/cert_example.png" alt="KOLAS logo" class="w-[300px] object-cover "/>
                     </div>
                 </div>
             </div>
