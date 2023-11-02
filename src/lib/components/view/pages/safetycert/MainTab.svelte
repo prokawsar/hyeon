@@ -1,5 +1,5 @@
 <script>
-    import {Tabs, TabItem, Heading, P, Span, Card} from 'flowbite-svelte';
+    import {Tabs, TabItem} from 'flowbite-svelte';
     $: screenSize =  window.innerWidth;
 
 </script>

@@ -1,12 +1,14 @@
 <script>
     import { Heading, P, Button } from 'flowbite-svelte';
     import {Section} from "flowbite-svelte-blocks";
+    import MainTab from "$lib/components/view/pages/safetycert/MainTab.svelte";
 </script>
 
-<div class="text-center bg-blue-50 justify-center flex items-center h-full">
-    <Section>
-        <Heading tag="h1" class="mb-4" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">준비중 입니다.</Heading>
-        <P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">인증마크 페이지</P>
-    </Section>
+<div class="text-center justify-center flex flex-col items-center w-full">
+    <div class="flex bg-primary-hero w-full h-[250px] items-center px-[10%] justify-between">
+        <div class="text-white font-bold text-xl">인증품목을 확인해보세요</div>
+        <img src="/svg/safety_cert_hero_icon.svg" alt="safetycerticon" class="h-[180px]"/>
+    </div>
+    <MainTab/>
 
 </div>

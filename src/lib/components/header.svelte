@@ -16,9 +16,9 @@
 	]
 
 	$: activeUrl = $page.url.pathname;
-	let activeClass = 'text-xl md:text-sm xl:text-xl font-medium border-b-2 border-b-primary-400 text-primary-400 items-center';
+	let activeClass = 'text-xl md:text-sm xl:text-xl font-medium text-primary-400 items-center';
 	let nonActiveClass = 'text-xl md:text-sm xl:text-xl font-medium text-gray-700 hover:text-black items-center';
-	let navLiActiveClass = 'text-xl md:text-sm xl:text-xl font-medium border-b-2 border-b-primary-400 text-primary-400';
+	let navLiActiveClass = 'text-xl md:text-sm xl:text-xl font-medium text-primary-400';
 	let navLiNonActiveClass = 'text-xl md:text-sm xl:text-xl font-medium text-gray-700 hover:text-black';
 </script>
 

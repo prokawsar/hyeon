@@ -62,7 +62,7 @@
         </TabItem>
 
         <!-- Another Tab-->
-        <TabItem open title="분석기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
+        <TabItem title="분석기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
             <div class="w-[100%] flex flex-col items-start px-4 sm:px-[10%]">
                 <div class="flex justify-center items-center relative">
                     <img src="/svg/grid.svg" alt="grid" class="h-40 mb-3"/>
