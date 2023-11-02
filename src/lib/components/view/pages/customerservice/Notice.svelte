@@ -49,10 +49,7 @@
 	<table class="w-full">
 		<tbody>
 			{#each data as item, i}
-				<tr
-					class="{data.length == i + 1
-						? ''
-						: 'border-b'} border-gray-30 text-xl flex flex-col justify-between sm:block">
+				<tr class="border-b border-gray-30 text-xl flex flex-col justify-between sm:block">
 					<td>{i + 1}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl dark:text-white"
@@ -63,7 +60,7 @@
 		</tbody>
 	</table>
 
-	<div class="flex justify-center">
+	<div class="flex justify-center my-5">
 		<Pagination
 			{pages}
 			on:previous={() => console.log('prev')}
