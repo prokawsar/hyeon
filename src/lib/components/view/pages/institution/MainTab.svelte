@@ -1,5 +1,5 @@
 <script>
-    import {Tabs, TabItem, Heading, P, Span} from 'flowbite-svelte';
+    import {Tabs, TabItem, Heading, P, Span, Card} from 'flowbite-svelte';
     const content = [
         {
             title: `반려동물의<br/>안전과 행복 증진`,
@@ -59,11 +59,29 @@
 
 
         </TabItem>
-        <TabItem title="분석기관소개" activeClasses="inline-block p-4 border-b-2 border-primary-text rounded-t-lg">
-            <p class="text-sm text-gray-500 dark:text-gray-400">
-                <b>Profile:</b>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <TabItem open title="분석기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
+            <div class="w-[100%] flex flex-col items-start px-4 sm:px-0">
+                <img src="/svg/kpscc.svg" alt="KPSCC" class="h-40 mb-3">
+
+                <div class="py-6"></div>
+
+                <!--와이에스환경기술연구원-->
+                <P class="text-2xl">'와이에스환경기술연구원'은</P>
+                <P class="text-3xl"><Span class="text-primary-text" highlgiht>KOLAS 인정 국제공인 시험기관</Span>입니다.</P>
+                <P class="pt-6">대한민국 국가기술표준원 한국인정기구(KOLAS)로부터 인정받은 국제공인시험기관(제364호)입니다.</P>
+                <P class="">인증된 시험법에 따라 환경/화학/의료 분야에서 시험분석, 품질검사, 품질보증 서비스를 제공하고 있습니다.</P>
+                <P class="">최고의 연구진과 최첨단 장비들을 기반으로 신속하고 정확하며, 무엇보다 신뢰할 수 있는 정밀한 시험분석결과를 제공하도록 최선을 다하겠습니다.</P>
+
+                <div class="py-10"></div>
+
+                <div class="border-gray-30 border-2 rounded-2xl w-full p-6">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KOLAS 국제공인 시험기관 이란?</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">국가표준제도 확립 및 산업표준화제도 운영, 시험기관 및 검사기관 인정제도의 운영,</p>
+                    <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">표준화 및 국가간 국제기구 협력 및 교류에 대한 업무를 권장하는 국가기술표준원이 운영하는 조직입니다.</p>
+                </div>
+            </div>
+
+
         </TabItem>
     </Tabs>
 </div>

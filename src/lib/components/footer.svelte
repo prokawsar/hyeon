@@ -17,7 +17,7 @@
 		</button>
 	</div>
 
-	<div class="bg-gray-200 flex w-full justify-center py-2">
+	<div class="bg-gray-200 dark:bg-gray-900 flex w-full justify-center py-2">
 		<div
 			class="flex flex-row px-5 md:px-0 w-full items-center justify-between md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
 			<div

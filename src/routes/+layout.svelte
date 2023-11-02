@@ -13,11 +13,9 @@
 </script>
 
 <Header />
-<main class="bg-gray-20">
-
+<main class="bg-gray-20 dark:bg-gray-800">
 	<div class="overflow-scroll mt-[81px]">
 		<slot />
 	</div>
-
-	<BackToTop />
+	<BackToTop/>
 </main>

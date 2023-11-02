@@ -91,7 +91,7 @@
 <div
 	class="flex flex-col p-3 md:flex-row px-3 md:px-0 gap-4 md:gap-6 w-full justify-center max-w-7xl mt-11">
 	<div
-		class="relative shadow-lg w-full md:w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+		class="relative shadow-lg w-full md:w-2/4 rounded-xl bg-white flex flex-col gap-5 items-center justify-center ">
 		<div id="swiper" class="swiper h-full w-full bg-gray-20 rounded-xl">
 			<div class="swiper-wrapper bg-transparent">
 				{#each Array(totalSlide).fill(1) as item, i}
@@ -130,12 +130,12 @@
 	</div>
 
 	<div
-		class="shadow-lg w-full md:w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
+		class="dark:bg-gray-700 shadow-lg w-full md:w-2/4 px-5 py-10 rounded-xl bg-white flex flex-col gap-5 items-center justify-center">
 		<div
 			class="flex flex-row items-center justify-between border-b-2 border-primary-300 w-full pb-5">
 			<p class="text-xl md:text-3xl text-primary-300 font-bold">새로운 소식</p>
 			<div class="border rounded-full p-2 w-8 h-8 flex items-center cursor-pointer">
-				<Fa icon={faPlus} />
+				<Fa icon={faPlus} class="dark:text-white"/>
 			</div>
 		</div>
 		<table class="w-full">
@@ -147,7 +147,7 @@
 							: 'border-b'} border-gray-30 text-xl flex flex-col sm:block">
 						<td class="text-primary-300 p-2 lg:p-4 text-sm md:text-base lg:text-xl">
 							{item.title}</td>
-						<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"><a href="/static">{item.desc}</a></td>
+						<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl dark:text-white"><a href="/static">{item.desc}</a></td>
 						<td class="p-2 lg:p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
 					</tr>
 				{/each}

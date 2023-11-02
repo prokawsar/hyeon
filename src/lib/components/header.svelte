@@ -2,7 +2,7 @@
 	import Fa from 'svelte-fa'
 	import { faBars } from '@fortawesome/free-solid-svg-icons'
 	import { slide } from 'svelte/transition'
-	import {Button, Navbar, NavBrand, NavHamburger, NavLi, NavUl} from "flowbite-svelte";
+	import {Button, DarkMode, Navbar, NavBrand, NavHamburger, NavLi, NavUl} from "flowbite-svelte";
 	import {goto} from "$app/navigation";
 	import {page} from "$app/stores";
 
@@ -30,11 +30,11 @@
 		<div class="flex md:order-2">
 			<NavHamburger/>
 			<Button class="bg-[#191919] text-white rounded-full px-8" size="sm">로그인</Button>
+			<DarkMode class="ml-2"/>
 		</div>
-
 		<NavUl {activeClass} {nonActiveClass} {activeUrl}>
 			{#each menus as menu}
-				<NavLi activeClass={navLiActiveClass} nonActiveClass={navLiNonActiveClass} href={menu.url}><div class="flex {activeUrl === menu.url ? 'border-b-2 border-b-primary-400 text-primary-400' : 'text-gray-700 hover:text-black'}">{#if menu.name === '미인증제품'}<img src="/svg/report.svg" alt="report" class="mr-1"/>{/if}{menu.name}</div></NavLi>
+				<NavLi activeClass={navLiActiveClass} nonActiveClass={navLiNonActiveClass} href={menu.url}><div class="flex {activeUrl === menu.url ? 'border-b-2 border-b-primary-400 text-primary-400' : 'text-gray-700 hover:text-black dark:text-white'}">{#if menu.name === '미인증제품'}<img src="/svg/report.svg" alt="report" class="mr-1"/>{/if}{menu.name}</div></NavLi>
 			{/each}
 		</NavUl>
 	</Navbar>
