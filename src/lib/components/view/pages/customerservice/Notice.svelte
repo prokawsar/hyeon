@@ -47,6 +47,20 @@
 		</div>
 	</div>
 	<table class="w-full table-auto">
+		<thead>
+			<tr>
+				<td>No</td>
+				<td>
+					<select class="border-none">
+						<option>카테고리</option>
+						<option>카테고리</option>
+						<option>카테고리</option>
+					</select>
+				</td>
+				<td class="text-center"> 제목 </td>
+				<td class="text-center"> 작성일 </td>
+			</tr>
+		</thead>
 		<tbody>
 			{#each data as item, i}
 				<tr class="border-b border-gray-30 text-xl">
