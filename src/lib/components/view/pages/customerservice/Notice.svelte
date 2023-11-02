@@ -47,8 +47,8 @@
 		</div>
 	</div>
 	<table class="w-full table-auto">
-		<thead>
-			<tr>
+		<thead class="border-b-2">
+			<tr class="text-xl">
 				<td>No</td>
 				<td>
 					<select class="border-none">
