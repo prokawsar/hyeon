@@ -46,10 +46,10 @@
 			</Input>
 		</div>
 	</div>
-	<table class="w-full">
+	<table class="w-full table-auto">
 		<tbody>
 			{#each data as item, i}
-				<tr class="border-b border-gray-30 text-xl flex flex-col justify-between sm:block">
+				<tr class="border-b border-gray-30 text-xl">
 					<td>{i + 1}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl dark:text-white"
