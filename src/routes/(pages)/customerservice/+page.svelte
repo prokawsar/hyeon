@@ -1,12 +1,13 @@
 <script>
     import { Heading, P, Button } from 'flowbite-svelte';
     import {Section} from "flowbite-svelte-blocks";
+    import MainTab from "$lib/components/view/pages/customerservice/MainTab.svelte";
 </script>
 
-<div class="text-center bg-blue-50 justify-center flex items-center h-full">
-    <Section>
-        <Heading tag="h1" class="mb-4" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">준비중 입니다.</Heading>
-        <P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">고객서비스 페이지</P>
-    </Section>
-
+<div class="flex flex-col justify-center items-center w-full mx-auto">
+    <div
+            class="flex flex-col items-center md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl justify-center w-full">
+        <MainTab/>
+    </div>
 </div>
+

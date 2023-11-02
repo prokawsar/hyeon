@@ -22,9 +22,9 @@
 
 </script>
 <div class="w-[100%]">
-    <Tabs style={"underline"} defaultClass="w-[100%] flex content-start items-start space-x-2 text-sm font-medium text-center text-primary-text border-b border-gray-200 dark:text-gray-400 dark:border-gray-700" contentClass="mt-8">
+    <Tabs style={"underline"} defaultClass="w-[100%] flex content-start items-start space-x-2 text-sm font-medium text-center text-primary-text border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 px-[10%]" contentClass="mt-8">
         <TabItem open title="인증기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
-            <div class="w-[100%] flex flex-col items-start px-4 sm:px-0">
+            <div class="w-[100%] flex flex-col items-start px-4 sm:px-[10%]">
                 <div class="flex justify-center items-center relative">
                     <img src="/svg/grid.svg" alt="grid" class="h-40 mb-3"/>
                     <img src="/svg/kpscc.svg" alt="kpscc" class="absolute w-[60%] py-2"/>
@@ -59,16 +59,15 @@
                     </div>
                 {/each}
             </div>
-
-
         </TabItem>
+
+        <!-- Another Tab-->
         <TabItem open title="분석기관소개" activeClasses="w-[100%] inline-block p-4 border-b-2 border-primary-text rounded-t-lg" >
-            <div class="w-[100%] flex flex-col items-start px-4 md:px-0">
+            <div class="w-[100%] flex flex-col items-start px-4 sm:px-[10%]">
                 <div class="flex justify-center items-center relative">
                     <img src="/svg/grid.svg" alt="grid" class="h-40 mb-3"/>
                     <img src="/svg/ysa_logo.svg" alt="ysa" class="absolute w-[60%] py-2"/>
                 </div>
-
 
                 <div class="py-2 md:py-6"></div>
 
