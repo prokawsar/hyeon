@@ -68,7 +68,7 @@
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl dark:text-white"
 						><a href="/static">{item.desc}</a></td>
-					<td class="p-2 lg:p-4 text-gray-400 text-sm lg:text-lg w-36"> {item.date} </td>
+					<td class="p-2 lg:p-4 text-gray-400 text-sm lg:text-lg w-32 md:w-36"> {item.date} </td>
 				</tr>
 			{/each}
 		</tbody>
