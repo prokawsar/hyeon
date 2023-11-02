@@ -17,7 +17,7 @@
 
 <Header />
 <main class="bg-gray-20 dark:bg-gray-800">
-	<div class="overflow-scroll mt-[81px]">
+	<div class="overflow-scroll mt-[61px] md:mt-[81px]">
 		<slot />
 	</div>
 	<BackToTop/>
