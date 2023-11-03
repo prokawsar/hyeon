@@ -38,6 +38,12 @@
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
 			date: '2023-04-14'
+		},
+		{
+			id: 7,
+			title: '보도자료',
+			desc: '펫세이프 에서 공지드립니다.',
+			date: '2023-04-14'
 		}
 	]
 
@@ -74,6 +80,13 @@
 	const next = () => {
 		if (currentPage === totalPages - 1) return
 		currentPage += 1
+	}
+
+	const pageSelect = (e: Event) => {
+		// Custom page select method
+		if (e.target) {
+			currentPage = e.target.textContent - 1
+		}
 	}
 </script>
 
@@ -115,7 +128,7 @@
 	</table>
 
 	<div class="relative flex justify-center my-5">
-		<Pagination bind:pages on:previous={prev} on:next={next} icon>
+		<Pagination bind:pages on:previous={prev} on:next={next} on:click={(e) => pageSelect(e)} icon>
 			<svelte:fragment slot="prev">
 				<span class="sr-only">Previous</span>
 				<ChevronLeftOutline class="w-2.5 h-2.5" />
