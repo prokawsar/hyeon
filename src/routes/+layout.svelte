@@ -28,6 +28,5 @@
 			<Button color="alternative">확인</Button>
 		</svelte:fragment>
 	</Modal>
-
 </main>
 <Footer />

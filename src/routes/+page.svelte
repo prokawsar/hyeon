@@ -19,7 +19,7 @@
 	<Hero />
 	<div
 		class="flex flex-col items-center md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl justify-center w-full pb-6">
-		<Note />
+		<!-- <Note /> -->
 		<Features />
 		<Announce />
 		<Contact />
