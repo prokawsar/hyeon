@@ -1,40 +1,80 @@
 <script lang="ts">
 	import { Button, Input, Pagination } from 'flowbite-svelte'
 	import { ChevronLeftOutline, ChevronRightOutline, SearchOutline } from 'flowbite-svelte-icons'
+	import { onMount } from 'svelte'
 	const data = [
 		{
+			id: 1,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
 			date: '2023-10-14'
 		},
 		{
+			id: 2,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
 			date: '2023-10-14'
 		},
 		{
+			id: 3,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
 			date: '2023-10-14'
 		},
 		{
+			id: 4,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
-			date: '2023-10-14'
+			date: '2023-11-14'
 		},
 		{
+			id: 5,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
-			date: '2023-10-14'
+			date: '2023-12-14'
 		},
 		{
+			id: 6,
 			title: '보도자료',
 			desc: '펫세이프 에서 공지드립니다.',
-			date: '2023-10-14'
+			date: '2023-04-14'
 		}
 	]
 
-	let pages = [{ name: '1' }, { name: '2' }, { name: '3' }, { name: '4' }, { name: '5' }]
+	let pages: any = []
+
+	let perPage = 3
+
+	$: totalRows = data.length
+	$: currentPage = 0
+	$: totalPages = Math.ceil(totalRows / perPage)
+	$: start = currentPage * perPage
+	$: end = currentPage === totalPages - 1 ? totalRows - 1 : start + perPage - 1
+
+	$: rows = data.slice(start, end + 1)
+
+	$: totalRows, (currentPage = 0)
+	$: currentPage, start, end
+
+	const generatePage = () => {
+		for (let i = 0; i < totalPages; i++) {
+			pages.push({ name: i + 1 })
+		}
+	}
+
+	onMount(() => {
+		generatePage()
+	})
+
+	const prev = () => {
+		if (currentPage === 0) return
+		currentPage -= 1
+	}
+
+	const next = () => {
+		if (currentPage === totalPages - 1) return
+		currentPage += 1
+	}
 </script>
 
 <div class="w-full px-[10%] my-10">
@@ -62,9 +102,9 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each data as item, i}
+			{#each rows as item, i}
 				<tr class="border-b border-gray-30 text-xl">
-					<td>{i + 1}</td>
+					<td>{item.id}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl"> {item.title}</td>
 					<td class="p-2 lg:p-4 text-sm md:text-base lg:text-xl dark:text-white"
 						><a href="/static">{item.desc}</a></td>
@@ -75,11 +115,7 @@
 	</table>
 
 	<div class="relative flex justify-center my-5">
-		<Pagination
-			{pages}
-			on:previous={() => console.log('prev')}
-			on:next={() => console.log('next')}
-			icon>
+		<Pagination bind:pages on:previous={prev} on:next={next} icon>
 			<svelte:fragment slot="prev">
 				<span class="sr-only">Previous</span>
 				<ChevronLeftOutline class="w-2.5 h-2.5" />
