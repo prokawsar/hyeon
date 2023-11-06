@@ -30,7 +30,7 @@
 		<div class="flex md:order-2">
 			<NavHamburger/>
 			<Button class="bg-[#191919] text-white rounded-full px-8" size="sm">로그인</Button>
-			<DarkMode class="ml-2"/>
+<!--			<DarkMode class="ml-2"/>-->
 		</div>
 		<NavUl {activeClass} {nonActiveClass} {activeUrl}>
 			{#each menus as menu}
