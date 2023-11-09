@@ -23,18 +23,18 @@
 </script>
 
 <div class="relative px-8">
-	<Navbar class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b" >
+	<Navbar fluid={true} class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b" >
 		<NavBrand href="/">
 			<img src="svg/logo.svg" class="mr-3 h-6 sm:h-9" alt="logo" />
 		</NavBrand>
 		<div class="flex md:order-2">
-			<NavHamburger/>
+			<NavHamburger />
 			<Button class="bg-[#191919] text-white rounded-full px-8" size="sm">로그인</Button>
-<!--			<DarkMode class="ml-2"/>-->
+		<!-- <DarkMode class="ml-2"/> -->
 		</div>
 		<NavUl {activeClass} {nonActiveClass} {activeUrl}>
 			{#each menus as menu}
-				<NavLi activeClass={navLiActiveClass} nonActiveClass={navLiNonActiveClass} href={menu.url}><div class="flex {activeUrl === menu.url ? 'border-b-2 border-b-primary-400 text-primary-400' : 'text-gray-700 hover:text-black dark:text-white'}">{#if menu.name === '미인증제품'}<img src="/svg/report.svg" alt="report" class="mr-1"/>{/if}{menu.name}</div></NavLi>
+				<NavLi active={activeUrl === "/"} activeClass={navLiActiveClass} nonActiveClass={navLiNonActiveClass} href={menu.url}><div class="flex {activeUrl === menu.url ? 'border-b-2 border-b-primary-400 text-primary-400' : 'text-gray-700 hover:text-black dark:text-white'}">{#if menu.name === '미인증제품'}<img src="/svg/report.svg" alt="report" class="mr-1"/>{/if}{menu.name}</div></NavLi>
 			{/each}
 		</NavUl>
 	</Navbar>
