@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <Spacer h="50"/>
+                <div class="h-[50px]"/>
 
                 <P class="text-2xl">Pet Safe 인증신청 절차</P>
                 <div class="border-gray-30 border-2 rounded-2xl w-full p-6 mt-6 flex flex-col sm:flex-row">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <Spacer h="50"/>
+                <div class="h-[50px]"/>
 
                 <P class="text-2xl">Pet Safe 인증신청 절차</P>
                 <div class="border-gray-30 border-2 rounded-2xl w-full p-6 mt-6 flex flex-col sm:flex-row">
